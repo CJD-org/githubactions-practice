@@ -2,14 +2,14 @@ name: 01inputs
 on: workflow_dispatch
 
  inputs:
-  names:
-    description: Hello World
-    required: true
+    names:
+      description: Hello World
+      required: true
 
- jobs:
-  print-name:
-    runs-on: ubuntu-latest
+    jobs:
+      print-name:
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: Print the input name
-        run: echo  The name is ${{ inputs.names }}
+      steps:
+        - name: Print the input name
+          run: echo  The name is ${{ inputs.names }}
