@@ -1,0 +1,19 @@
+name: if examples
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Deploy to production'
+        required: true
+        default: 'false'
+        type: boolean
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: Deploy to production
+      if: ${{ inputs.deploy == 'true' }}
+      run: echo "Deploying to production..."
+      
