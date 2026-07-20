@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
     inputs:
       names:
-        description: "Jagadeesh"
+        description: "You name"
         required: true
         type: string
 
