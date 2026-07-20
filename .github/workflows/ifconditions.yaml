@@ -12,8 +12,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Deploy to production
-      if: ${{ inputs.deploy == 'true' }}
-      run: echo "Deploying to production..."
-      
+    steps:
+      - name: Deploy to production
+        if: ${{ inputs.deploy == 'true' }}
+        run: echo "Deploying to production"
