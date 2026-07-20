@@ -1,12 +1,12 @@
 name: 01inputs
 on: workflow_dispatch
 
-inputs:
+ inputs:
   names:
     description: Hello World
     required: true
 
-jobs:
+ jobs:
   print-name:
     runs-on: ubuntu-latest
 
