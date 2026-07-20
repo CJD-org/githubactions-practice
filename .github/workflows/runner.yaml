@@ -1,0 +1,13 @@
+name: Runner
+on: push
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: df -h
+      - run: free -m
+      - run: lscpu
+      - run: cat /etc/os-release
+      - run: uname -a
