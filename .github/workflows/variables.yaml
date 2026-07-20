@@ -1,0 +1,14 @@
+name: Variables
+on: workflow_dispatch
+
+jobs:
+  variables:
+    APP_NAME: roboshop
+    APP_VERSION: 1.0
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: step-1
+        run: echo "App Name: ${{ job.variables.APP_NAME }}"
+      - name: step2
+        run: echo "App Version: ${{ job.variables.APP_VERSION }}"
