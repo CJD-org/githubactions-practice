@@ -2,7 +2,7 @@
 # okesari multiple persond trigger cheyakuda  concurrency use chestuna.
 
 name: concurrency
-on: [push] # tigger
+#on: [push] # tigger
 concurrency:
 # this workfloe should be trigger fot any branch  only once
   group: ${{ github.workflow }}-${{ github.ref }}

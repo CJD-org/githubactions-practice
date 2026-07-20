@@ -6,6 +6,7 @@ env:
   APP_VERSION: 1.0
 
 jobs:
+  print-env:
     runs-on: ubuntu-latest
 
     steps:
